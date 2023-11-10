@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+$primGreen:#003A31;
+
+body{
+  width: 100vw;
+  min-height: 100vh;
+  @media(max-width: 1320px){
+      padding: 0rem;
+  }
+  .container{
+    width:100%;
+  
+    .navBar{
+      padding: 1rem 7rem;
+      background-color: #003A31;
+      color: white;
+      margin: 0 auto;
+      @media(max-width: 768px){
+        padding: 1rem .4rem;
+
+      }
+      .right-nav{
+        display: flex;
+        gap: 5rem;
+        .registerBtn{
+
+        }
+        .loginBtn{
+          background-color: #C1392A;
+          padding: .5rem 1rem;
+        }
+      }
+    }
+    .heroSectn{
+      background: url('/images/hero-img.jpg');
+      background-size: 100%;
+      width: 100%;
+      color: white;
+      background-repeat: no-repeat;
+      height: 70vh;
+      background-position: 100%;
+      position: relative;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      @media(max-width: 768px){
+        background-size:cover;
+        height: 60vh;
+      }
+      .ind{
+        z-index: 300;
+        color: white;
+      }
+      .overally{
+        width: 100%;
+        padding: 3rem 7rem; 
+        background: linear-gradient(to right,black 30% ,rgba(0, 0, 0, 20%));
+        // background:black;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 10;
+        @media(max-width: 768px){
+          padding: 1rem .4rem;
+        }
+        .service-list {
+          // background-color: red;
+          padding: 1rem 2rem;
+          li{
+            font-size: 13px;
+            line-height: 24px;
+          }
+        }
+        h1{
+          font-size: 2rem;
+          font-weight: 700;
+          width: 60%;
+          @media(max-width: 768px){
+            width: 70%;
+          }
+        }
+        p{
+          font-size: 12px;
+          margin-top: .4rem;
+          line-height: 20px;
+          width: 60%;
+          line-height: 20px;
+          @media(max-width: 768px){
+            width: 90%;
+          }
+        }
+        .cta-btns{
+          flex-wrap: wrap;
+          button{
+            @media(max-width: 768px){
+              width: 100%;
+            }
+          }
+        }
+      }
+      button{
+        padding: .3rem 1rem;
+      }
+      .bgcolor{
+        background-color: #286D24;
+
+      }
+      .btnColor{
+        border: 2px solid #286D24;
+        background-color: none;
+      }
+      .border{
+        border: 2px solid #286D24;
+      }
+    }
+  }
+}
